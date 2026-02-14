@@ -21,7 +21,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/finance-tracker', {
+mongoose.connect(process.env.MONGODB_URL || 'mongodb://mongodb:27017/finance-tracker', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
